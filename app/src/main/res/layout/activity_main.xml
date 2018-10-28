@@ -38,30 +38,18 @@
 
     <CheckBox
         android:id="@+id/soyMilkCheckbox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_below="@id/toppingsLabel"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginBottom="0dp"
         android:text="Soy milk"
-        android:textSize="20sp"
-        android:textAppearance="?android:textAppearanceMedium"
-        android:paddingLeft="24dp"
+        style="@style/ToppingsTextStyle"
         />
 
     <CheckBox
         android:id="@+id/chocolateCheckbox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/ToppingsTextStyle"
         android:layout_below="@id/soyMilkCheckbox"
         android:layout_marginTop="5dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginBottom="10dp"
         android:text="Chocolate"
-        android:textSize="20sp"
-        android:textAppearance="?android:textAppearanceMedium"
-        android:paddingLeft="24dp"
         />
 
 
@@ -92,7 +80,6 @@
             android:textSize="24dp"
             android:layout_below="@id/quantityLabel"
             android:layout_marginLeft="10dp"
-            android:onClick="increment"
             />
 
         <TextView
@@ -115,7 +102,6 @@
             android:textSize="24dp"
             android:layout_below="@id/quantityNumber"
             android:layout_marginLeft="8dp"
-            android:onClick="decrement"
             />
     </LinearLayout>
 
